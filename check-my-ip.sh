@@ -28,7 +28,7 @@ else
   touch "$LAST_WAN_IP_FILE"
 fi
 
-WAN_IP=`dig @8.8.8.8 $DYN_HOSTNAME +short`
+WAN_IP=`dig A $DYN_HOSTNAME +short`
 
 echo Current WAN IP: $WAN_IP
 
